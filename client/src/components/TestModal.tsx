@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
-import { Dialog, DialogContent } from '@/components/ui/dialog';
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
@@ -99,6 +99,8 @@ export default function TestModal({ testId, isOpen, onClose }: TestModalProps) {
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700">
+        <DialogTitle className="sr-only">{testData.title}</DialogTitle>
+        <DialogDescription className="sr-only">{testData.description}</DialogDescription>
         {phase === 'start' && (
           <div className="p-8 text-center">
             <div className={`w-20 h-20 mx-auto mb-6 bg-gradient-to-br ${testData.gradient} rounded-3xl flex items-center justify-center shadow-xl`}>
