@@ -22,11 +22,9 @@ export default function Header() {
           {/* Dark Mode Toggle */}
           <Button
             onClick={toggleTheme}
-            variant="outline"
-            size="sm"
-            className="relative w-16 h-8 bg-gray-300 dark:bg-gray-600 rounded-full p-1 transition-colors duration-300 border-0 hover:bg-gray-400 dark:hover:bg-gray-500"
+            className="relative flex items-center w-16 h-8 bg-gray-300 dark:bg-gray-600 rounded-full p-1 transition-colors duration-300 border-0 hover:bg-gray-400 dark:hover:bg-gray-500 overflow-hidden"
           >
-            <div className={`w-6 h-6 bg-white dark:bg-gray-800 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center ${theme === 'dark' ? 'translate-x-8' : 'translate-x-0'}`}>
+            <div className={`w-6 h-6 bg-white dark:bg-gray-800 rounded-full shadow-md transform transition-transform duration-300 flex items-center justify-center ${theme === 'dark' ? 'translate-x-4' : 'translate-x-0'}`}>
               {theme === 'light' ? (
                 <Sun className="text-yellow-500" size={14} />
               ) : (
@@ -34,8 +32,8 @@ export default function Header() {
               )}
             </div>
             {/* Background icons */}
-            <Sun className={`absolute left-1.5 top-1.5 text-yellow-500 transition-opacity duration-300 ${theme === 'light' ? 'opacity-0' : 'opacity-30'}`} size={14} />
-            <Moon className={`absolute right-1.5 top-1.5 text-blue-400 transition-opacity duration-300 ${theme === 'dark' ? 'opacity-0' : 'opacity-30'}`} size={14} />
+            <Sun className={`absolute left-2 top-2 text-yellow-500 transition-opacity duration-300 ${theme === 'light' ? 'opacity-0' : 'opacity-30'}`} size={12} />
+            <Moon className={`absolute right-2 top-2 text-blue-400 transition-opacity duration-300 ${theme === 'dark' ? 'opacity-0' : 'opacity-30'}`} size={12} />
           </Button>
         </div>
       </div>
