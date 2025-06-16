@@ -13,10 +13,8 @@ export default function Footer() {
         </div>
         
         <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-gray-500 dark:text-gray-400 mb-8">
-          <a href="#" className="hover:text-primary transition-colors">개인정보처리방침</a>
-          <a href="#" className="hover:text-primary transition-colors">이용약관</a>
-          <a href="#" className="hover:text-primary transition-colors">문의하기</a>
-          <a href="#" className="hover:text-primary transition-colors">테스트 제안</a>
+          <a href="/privacy" className="hover:text-primary transition-colors">개인정보처리방침</a>
+          <a href="/terms" className="hover:text-primary transition-colors">이용약관</a>
         </div>
         
         <div className="text-center text-sm text-gray-400 dark:text-gray-500">

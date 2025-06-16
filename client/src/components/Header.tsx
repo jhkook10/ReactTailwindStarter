@@ -33,6 +33,9 @@ export default function Header() {
                 <Moon className="text-blue-400" size={14} />
               )}
             </div>
+            {/* Background icons */}
+            <Sun className={`absolute left-1.5 top-1.5 text-yellow-500 transition-opacity duration-300 ${theme === 'light' ? 'opacity-0' : 'opacity-30'}`} size={14} />
+            <Moon className={`absolute right-1.5 top-1.5 text-blue-400 transition-opacity duration-300 ${theme === 'dark' ? 'opacity-0' : 'opacity-30'}`} size={14} />
           </Button>
         </div>
       </div>

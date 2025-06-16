@@ -94,6 +94,10 @@ The application is designed to work as a static site for Cloudflare Pages deploy
 
 Changelog:
 - June 16, 2025. Initial setup
+- December 16, 2024. Enhanced result descriptions for better user engagement
+- December 16, 2024. Added Privacy Policy and Terms of Service pages
+- December 16, 2024. Improved dark mode toggle UI with background icons
+- December 16, 2024. Streamlined footer navigation
 
 # User Preferences
 
